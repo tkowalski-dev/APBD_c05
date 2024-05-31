@@ -21,6 +21,11 @@ public class ClientsService : IClientService
             return false;
         }
 
+        if (!toDelete.ClientTrips.Any())
+        {
+            throw new ArgumentException("Cannot delete a client with a trip!");
+        }
+
         _context.Trips.Remove(toDelete);
         await _context.SaveChangesAsync();
         return true;

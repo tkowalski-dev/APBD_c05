@@ -15,7 +15,7 @@ public class ClientsController : ControllerBase
         _clientService = clientService;
     }
     
-    [HttpDelete]
+    [HttpDelete("{id::int}")]
     public IActionResult DeleteClient(Client client)
     {
         var result = _clientService.DeleteClient(client);
