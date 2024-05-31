@@ -1,4 +1,5 @@
-﻿using APBD_c05.Services;
+﻿using APBD_c05.Models;
+using APBD_c05.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APBD_c05.Controllers;
