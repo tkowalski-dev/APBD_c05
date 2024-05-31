@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace APBD_c05.Models;
+namespace APBD_c05.DTOs;
 
-public partial class CountryDTO
+public partial class CountryDto
 {
     // public int IdCountry { get; set; }
 

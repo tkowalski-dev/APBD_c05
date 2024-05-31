@@ -18,7 +18,7 @@ public partial class MasterContext : DbContext
 
     public virtual DbSet<Client> Clients { get; set; }
 
-    public virtual DbSet<ClientTrip> ClientTrips { get; set; }
+    public virtual DbSet<ClientTrip?> ClientTrips { get; set; }
 
     public virtual DbSet<Country> Countries { get; set; }
 

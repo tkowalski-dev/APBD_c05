@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace APBD_c05.Models;
+namespace APBD_c05.DTOs;
 
-public partial class TripDTO
+public class TripDTO
 {
     // public int IdTrip { get; set; }
 
@@ -18,10 +18,10 @@ public partial class TripDTO
     public int MaxPeople { get; set; }
     
     // public virtual ICollection<Country> IdCountries { get; set; } = new List<Country>();
-    public virtual ICollection<CountryDTO> Countries { get; set; } = new List<CountryDTO>();
+    public ICollection<CountryDto> Countries { get; set; } = new List<CountryDto>();
 
     // public virtual ICollection<ClientTrip> ClientTrips { get; set; } = new List<ClientTrip>();
-    public virtual ICollection<ClientDTO> Clients { get; set; } = new List<ClientDTO>();
+    public ICollection<ClientDto> Clients { get; set; } = new List<ClientDto>();
 
 
 }
